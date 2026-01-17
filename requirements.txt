@@ -1,0 +1,17 @@
+# Discord Bot
+py-cord[voice]>=2.6.0
+
+# Audio Processing
+pydub>=0.25.1
+
+# Speech-to-Text (MLX Whisper for Apple Silicon)
+lightning-whisper-mlx>=0.0.10
+
+# LLM Summarization
+ollama>=0.4.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Async utilities
+aiofiles>=24.1.0
