@@ -33,8 +33,18 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gpt-oss:20b")
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
 # Recording settings
-MAX_RECORDING_DURATION_SECONDS = int(os.getenv("MAX_RECORDING_DURATION_SECONDS", "3600"))  # 1 hour default
+MAX_RECORDING_DURATION_SECONDS = int(os.getenv("MAX_RECORDING_DURATION_SECONDS", "7200"))  # 2 hours default
 AUTO_DELETE_RECORDINGS = os.getenv("AUTO_DELETE_RECORDINGS", "true").lower() == "true"
 
 # Summary settings
 SUMMARY_LANGUAGE = os.getenv("SUMMARY_LANGUAGE", "ja")  # Japanese by default
+
+# Long audio processing settings
+CHUNK_DURATION_MINUTES = int(os.getenv("CHUNK_DURATION_MINUTES", "5"))  # Split audio into 5-minute chunks
+MAX_CONCURRENT_TRANSCRIPTIONS = int(os.getenv("MAX_CONCURRENT_TRANSCRIPTIONS", "2"))  # Parallel transcription limit
+
+# LLM context settings
+MAX_CONTEXT_CHARS = int(os.getenv("MAX_CONTEXT_CHARS", "12000"))  # Max chars before hierarchical summarization
+
+# Progress update settings
+PROGRESS_UPDATE_INTERVAL_SECONDS = int(os.getenv("PROGRESS_UPDATE_INTERVAL_SECONDS", "30"))

@@ -1,6 +1,6 @@
 # Voicord
 
-Discord音声チャットを録音し、文字起こし・要約を行うボットです。Apple Silicon (M1/M2/M3/M4) に最適化されています。
+Discord音声チャットを録音し、文字起こし・要約を行うボットです。Apple Siliconに最適化されています。
 
 ## 特徴
 
@@ -12,7 +12,7 @@ Discord音声チャットを録音し、文字起こし・要約を行うボッ�
 
 ## 必要環境
 
-- macOS (Apple Silicon: M1/M2/M3/M4)
+- macOS (Apple Silicon)
 - Python 3.11+
 - ffmpeg
 - Ollama
